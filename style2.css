@@ -1,0 +1,144 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+	text-transform: capitalize;
+	padding: 10px 0px;
+	background-color: rgb(27, 112, 27);
+	color: white;
+}
+ nav ul{
+	display: flex;
+	
+}
+ul li{
+	list-style: none;
+	padding: 10px;
+}
+.social-links ul{
+display: flex;
+}
+ 
+a{
+	text-decoration: none;
+	color:white;
+}
+.main{
+	display: flex;
+	width: 100%;
+	padding: 10px;
+	
+
+}
+aside{
+	flex: 20%;
+	padding: 10px;
+	background-color: rgba(245, 245, 245, 0.747);
+}
+aside ul li a{
+	color: green;
+
+}
+aside ul li {
+	border-bottom: 1px solid black;
+}
+article{
+	flex: 80%;
+	padding: 10px;
+
+}
+article h2,p{
+			padding: 10px;
+}
+.service{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.service1 ,.service2,.service3{
+	flex:31%;
+	padding: 10px;
+	position: relative;
+	
+
+}
+.service h3{
+	padding: 10px;
+	text-transform: capitalize;
+}
+footer{
+	text-align: center;
+	background-color: grey;
+	text-transform: capitalize;
+}
+button{
+	border:none;
+	padding: 7px;
+	margin-top: auto;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	
+}
+@media screen  and  (max-width:850px){
+	aside{
+		flex: 30%;
+	}
+	.service1 ,.service2,.service3{
+		flex: 50%;
+		max-width: 50%;
+	}
+	button{
+		bottom: 30px;
+	}
+
+}
+@media screen and (max-width:600px ) {
+	header{
+		flex-direction: column;
+	}
+	.logo{
+		order: -1;
+	}
+	article{
+		order: -1;
+		text-align: center;
+	}
+	.main{
+			flex-direction: column;
+	}
+	.service{
+		flex-direction: column;
+		
+		
+	}
+	.service1 ,.service2,.service3{
+		max-width: 100%;
+	}
+	.service .img{
+		width: 70%;
+		margin: 0px auto;
+	}
+	.aside-img img{
+		height: 300px;
+	}
+	aside ul{
+		text-align: center;
+	}
+	article p{
+		text-align: justify;
+	}
+}
+
+
+
+
